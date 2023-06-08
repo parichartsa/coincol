@@ -1,0 +1,272 @@
+/*========home page========*/
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+.logo img {
+    max-height: 40px; 
+    width: auto; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+  
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    position: relative;
+}
+  
+nav ul li:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+}
+  
+.signup-box {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+    
+.signup-button {
+    background-color: white;
+    color: #333;
+    border: solid 1px #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.signup-button:hover {
+    background-color: #333;
+    color: #fff;  
+}
+  /*========containers========*/
+  
+.different-color {
+    color: #BD1550; 
+}
+.icon {
+    width: 40px;
+    height: 50px;
+    margin-right: 10px;
+}
+  
+.container {
+    display: flex;
+    justify-content: flex-end;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)), url(./images/45491255-thailand-travel-background-concept.webp);
+    background-size: cover;
+    background-position: center;
+}
+        
+.container-img img {
+    position: relative;
+    left: 0;
+    margin-top: 30px;
+    margin-right: 100px;
+    animation: slideUpDown 2s infinite alternate;
+    width: 500px;
+    height: 600px;
+}
+  
+    
+@keyframes slideUpDown {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -10px;
+    }
+    100% {
+      top: 0;
+    }
+}
+  
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: auto;
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+.header-container h1 {
+    margin-right: 500px;
+    margin-bottom: 3px;
+}
+
+.header-container h3 {
+    margin-right: 150px;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 200px;
+    background: linear-gradient(94.11deg, rgba(253, 253, 253, 0.6) 2.29%, rgba(234, 234, 234, 0.4) 95.27%);
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 0px 10px #888888;
+    font-size: 16px;
+  }
+  .box a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .box img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .box:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  /*body*/
+  .content h1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
+  }
+  .history {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .history-box {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    background: linear-gradient(94.11deg, rgba(253, 253, 253, 0.6) 2.29%, rgba(234, 234, 234, 0.4) 95.27%);
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 0px 10px #888888;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  
+  .history-box img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+  
+  .history-box h2 {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+  
+  .history-box p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .history-box:first-child {
+    margin-left: 20px;
+  }
+  
+  .history-box:last-child {
+    margin-right: 20px;
+  }
+  
+  
+  .read-more-button {
+    background-color: white;
+    color: #333;
+    border: solid 1px #333;
+    font-size: 16px;
+    padding: 10px 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .read-more-button:hover {
+    background-color: #333;
+    color: #fff;  
+  }
+  .how-to-make {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    text-align: center;
+  }
+  .make-coin-box {
+    background-color: #f5f5f5;
+    display: inline-block; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: calc(50% - 50px); 
+    background: linear-gradient(94.11deg, rgba(253, 253, 253, 0.6) 2.29%, rgba(234, 234, 234, 0.4) 95.27%);
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 0px 10px #888888;
+    font-size: 20px;
+    box-sizing: border-box; 
+  }
+  
+  .make-coin-box a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .make-coin-box img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  .make-coin-box:hover {
+    background-color: #FFC700;
+    color: black;
+  }
+  .content {
+    background-image: url(./images/image\ 31.png);
+  }
+  
+  footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+  }

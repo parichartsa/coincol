@@ -1,0 +1,94 @@
+.knowledge-container {
+    background-image: url(./images/image\ 34.png);
+    margin-top: 100px;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.knowledge-box {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    width: 800px;
+    margin-bottom: 10px;
+    margin-left: auto; 
+    margin-right: auto;
+    align-items: center;
+    background: linear-gradient(94.11deg, rgba(253, 253, 253, 0.6) 2.29%, rgba(234, 234, 234, 0.4) 95.27%);
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 0px 10px #888888;
+  }
+  
+  .knowledge-content {
+    position: absolute;
+    left: 50%; 
+    top: 200px;
+    transform: translateX(-50%); 
+  }
+  
+  details {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  details summary {
+    background-color: #f5f5f5;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+  }
+  
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  details summary::before {
+    content: '\25B6';
+    color: #333;
+    font-size: 12px;
+    margin-right: 5px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  
+  details[open] summary::before {
+    content: '\25BC';
+  }
+  
+  details p {
+    padding: 10px;
+    background-color: linear-gradient(94.11deg, rgba(253, 253, 253, 0.6) 2.29%, rgba(234, 234, 234, 0.4) 95.27%);
+  }
+  
+  /* เพิ่มสีสัน */
+  details summary {
+    background-color: rgb(255, 200, 0);
+    backdrop-filter: blur(10px);
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  details summary:hover {
+    background-color: rgba(255, 200, 0, 0.709);
+  }
+  details[open] summary {
+    background-color: linear-gradient(94.11deg, rgba(253, 253, 253, 0.6) 2.29%, rgba(234, 234, 234, 0.4) 95.27%);
+  }
+  
+    
+  footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+  }

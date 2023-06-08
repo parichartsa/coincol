@@ -1,0 +1,292 @@
+/* CSS nav*/
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    margin-right: 10px;
+  }
+  .logo img {
+    max-height: 40px; 
+    width: auto; 
+  }
+.profile {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+  .profile .profile-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  
+  nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+  }
+  
+  nav ul li {
+      display: inline;
+      margin-right: 10px;
+      position: relative;
+  }
+  
+  nav ul li:hover::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: #000;
+      bottom: 0;
+      left: 0;
+  }
+  
+  nav ul li a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px;
+  }
+  
+.signup-box {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+    
+.signup-button {
+    background-color: white;
+    color: #333;
+    border: solid 1px #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+  .signup-button:hover {
+    background-color: #333;
+    color: #fff;  
+  }
+  
+/* CSS for profile */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.username {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.bio {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.add-photo-button,
+.edit-profile-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-right: 10px;
+  background-color: white;
+  color: #333;
+  border: solid 1px #333;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-photo-button:hover,
+.edit-profile-button:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* CSS for posts */
+.post-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.post {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.post:hover .post-overlay {
+  opacity: 1;
+}
+
+.post-caption {
+  font-size: 16px;
+  color: white;
+}
+
+/* CSS for edit profile */
+.edit-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-right: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* CSS for post modal */
+.post-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 80%;
+}
+
+.post-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-image {
+  width: 80%;
+  max-height: 700px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.modal-caption {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.modal-close-button {
+  background-color: white;
+  color: #333;
+  border: solid 1px #333;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* CSS for checkbox */
+.checkbox-label {
+  position: relative;
+  padding-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 10px;
+  user-select: none;
+}
+
+
+
+
+
+  
+  
+  
+  
+  
+  
